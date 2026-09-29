@@ -78,7 +78,6 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "5102e2c9-7a45-4995-9fad-0d99587d600d",
-                "d6380091-1506-4d9e-8855-153cbf32d712",
                 "20ffd666-ba9d-40d4-9467-d648d5edc200"
               ],
               "containedElements": [
@@ -1058,54 +1057,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Requests/Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "a43f4c4a-86b4-4fb4-9a99-e537e327e310"
-              ]
-            },
-            "labels": [
-              "Requests/Response"
-            ],
-            "id": "d6380091-1506-4d9e-8855-153cbf32d712",
-            "source": {
-              "x": 193,
-              "y": 188
-            },
-            "target": {
-              "cell": "0bb7d713-f782-45a1-b981-b238567bf15c",
-              "port": "b12a50da-c45a-4df9-9e94-b1ae64993d4b"
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Triggers/Response\n",
               "description": "",
               "outOfScope": false,
@@ -1233,6 +1184,52 @@
                 "y": 260
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Requests/Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Requests/Response"
+            ],
+            "id": "d6380091-1506-4d9e-8855-153cbf32d712",
+            "source": {
+              "cell": "9a14a511-8096-41bd-903a-53e66c286d66",
+              "port": "4beb85e5-beb7-4633-a422-efffb3912439"
+            },
+            "target": {
+              "cell": "0bb7d713-f782-45a1-b981-b238567bf15c",
+              "port": "b12a50da-c45a-4df9-9e94-b1ae64993d4b"
+            }
           }
         ]
       }
