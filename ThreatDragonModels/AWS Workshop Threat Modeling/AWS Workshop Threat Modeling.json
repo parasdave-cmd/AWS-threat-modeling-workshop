@@ -22,7 +22,7 @@
           {
             "position": {
               "x": 829.9999999999995,
-              "y": 40.00000000000094
+              "y": 25.000000000000597
             },
             "size": {
               "width": 260,
@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "d2256203-7f66-4ed4-924e-59bdfd2495ce",
             "zIndex": -1,
+            "id": "d2256203-7f66-4ed4-924e-59bdfd2495ce",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Lambda/DB boundary",
@@ -44,7 +44,8 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "a3f266ea-0b5b-45d4-8f8f-8e200c35d81e"
+                "a3f266ea-0b5b-45d4-8f8f-8e200c35d81e",
+                "81b80fdf-1a10-4a19-9e9e-9db47e1ad84c"
               ],
               "containedElements": [
                 "f77ba07b-fbb3-4a8e-aa96-b2003967448f",
@@ -68,8 +69,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "a43f4c4a-86b4-4fb4-9a99-e537e327e310",
             "zIndex": -1,
+            "id": "a43f4c4a-86b4-4fb4-9a99-e537e327e310",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "Webserver boundary",
@@ -77,10 +78,13 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
+                "869dbd08-1949-43d7-ab8f-1ce6d67efddc",
+                "20ffd666-ba9d-40d4-9467-d648d5edc200",
                 "5102e2c9-7a45-4995-9fad-0d99587d600d",
-                "20ffd666-ba9d-40d4-9467-d648d5edc200"
+                "3e3ba842-b708-4523-b934-203fdef3ac56"
               ],
               "containedElements": [
+                "24c49a44-e372-4a1e-bcc8-c3da8161ab3e",
                 "9a14a511-8096-41bd-903a-53e66c286d66",
                 "0bb7d713-f782-45a1-b981-b238567bf15c",
                 "23e35eca-240f-4461-83a6-10298936f660"
@@ -108,6 +112,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -191,7 +196,6 @@
               ]
             },
             "id": "aee91b3a-5d2e-4004-bca0-2e6b78cd111b",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "User",
@@ -206,8 +210,8 @@
           },
           {
             "position": {
-              "x": 320,
-              "y": 40.00000000000094
+              "x": 690,
+              "y": 40
             },
             "size": {
               "width": 60,
@@ -225,6 +229,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -308,7 +313,6 @@
               ]
             },
             "id": "24c49a44-e372-4a1e-bcc8-c3da8161ab3e",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "Cognito",
@@ -345,6 +349,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -428,7 +433,6 @@
               ]
             },
             "id": "9a14a511-8096-41bd-903a-53e66c286d66",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Amplify",
@@ -465,6 +469,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -548,7 +553,6 @@
               ]
             },
             "id": "0bb7d713-f782-45a1-b981-b238567bf15c",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "API Gateway",
@@ -585,6 +589,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -668,7 +673,6 @@
               ]
             },
             "id": "23e35eca-240f-4461-83a6-10298936f660",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Lambda",
@@ -708,6 +712,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -791,7 +796,6 @@
               ]
             },
             "id": "f77ba07b-fbb3-4a8e-aa96-b2003967448f",
-            "zIndex": 6,
             "data": {
               "type": "tm.Store",
               "name": "DB",
@@ -832,6 +836,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 7,
             "ports": {
               "groups": {
                 "top": {
@@ -915,7 +920,6 @@
               ]
             },
             "id": "5f553d92-7e38-4f4b-aea1-d4940443112e",
-            "zIndex": 7,
             "data": {
               "type": "tm.Store",
               "name": "S3",
@@ -963,7 +967,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a43f4c4a-86b4-4fb4-9a99-e537e327e310"
+              ]
             },
             "labels": [
               "Login Request/Response"
@@ -978,64 +984,6 @@
               "port": "b12a50da-c45a-4df9-9e94-b1ae64993d4b"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Requests/Response",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": [
-                "a43f4c4a-86b4-4fb4-9a99-e537e327e310"
-              ]
-            },
-            "labels": [
-              "Requests/Response"
-            ],
-            "id": "5102e2c9-7a45-4995-9fad-0d99587d600d",
-            "source": {
-              "x": 193,
-              "y": 165
-            },
-            "target": {
-              "cell": "9a14a511-8096-41bd-903a-53e66c286d66",
-              "port": "b12a50da-c45a-4df9-9e94-b1ae64993d4b"
-            },
-            "vertices": [
-              {
-                "x": 350,
-                "y": 140
-              },
-              {
-                "x": 420,
-                "y": 140
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1106,7 +1054,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Data",
-              "description": "",
+              "description": "Vehicle list",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1131,7 +1079,17 @@
             "target": {
               "cell": "f77ba07b-fbb3-4a8e-aa96-b2003967448f",
               "port": "b56b0d27-76b8-42c7-aaf2-caa8f1a24c4c"
-            }
+            },
+            "vertices": [
+              {
+                "x": 800,
+                "y": 220
+              },
+              {
+                "x": 840,
+                "y": 200
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1154,7 +1112,7 @@
             "data": {
               "type": "tm.Flow",
               "name": "Data",
-              "description": "",
+              "description": "Vehicle Registration",
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
@@ -1205,6 +1163,54 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Vehicle Registration PDF",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "d2256203-7f66-4ed4-924e-59bdfd2495ce"
+              ]
+            },
+            "labels": [
+              "Vehicle Registration PDF"
+            ],
+            "id": "81b80fdf-1a10-4a19-9e9e-9db47e1ad84c",
+            "source": {
+              "x": 1002,
+              "y": 168
+            },
+            "target": {
+              "cell": "5f553d92-7e38-4f4b-aea1-d4940443112e",
+              "port": "d94959f1-0517-47eb-ad7b-1aae6f9cd2d9"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Requests/Response",
               "description": "",
               "outOfScope": false,
@@ -1216,19 +1222,103 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a43f4c4a-86b4-4fb4-9a99-e537e327e310"
+              ]
             },
             "labels": [
               "Requests/Response"
             ],
-            "id": "d6380091-1506-4d9e-8855-153cbf32d712",
+            "id": "5102e2c9-7a45-4995-9fad-0d99587d600d",
             "source": {
-              "cell": "9a14a511-8096-41bd-903a-53e66c286d66",
-              "port": "4beb85e5-beb7-4633-a422-efffb3912439"
+              "x": 193,
+              "y": 165
             },
             "target": {
               "cell": "0bb7d713-f782-45a1-b981-b238567bf15c",
               "port": "b12a50da-c45a-4df9-9e94-b1ae64993d4b"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 140
+              },
+              {
+                "x": 420,
+                "y": 140
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Requests/Response",
+              "description": "HTML/CSS/JS",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": [
+                "a43f4c4a-86b4-4fb4-9a99-e537e327e310"
+              ]
+            },
+            "labels": [
+              "Requests/Response"
+            ],
+            "id": "3e3ba842-b708-4523-b934-203fdef3ac56",
+            "source": {
+              "x": 193,
+              "y": 169
+            },
+            "target": {
+              "cell": "9a14a511-8096-41bd-903a-53e66c286d66",
+              "port": "4beb85e5-beb7-4633-a422-efffb3912439"
+            }
+          },
+          {
+            "position": {
+              "x": 192.5,
+              "y": 350.0000000000009
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Assumptions:\n\nREST-based APIs are served by AWS Lambda and the Amazon API Gateway.\nAll users can perform all operations.\nGUIDs are random and non-sequential.\nCognito ensures anyone who can call Gateway is authenticated\nSingle tenant infra - all users can see all cars\nAll user input goes through Amplify, Amplify calls Gateway\nDB has list of vehicles and pulls from S3"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "224c0739-5607-4487-a36a-68fda9cfab05",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Text",
+              "name": "Assumptions:\n\nREST-based APIs are served by AWS Lambda and the Amazon API Gateway.\nAll users can perform all operations.\nGUIDs are random and non-sequential.\nCognito ensures anyone who can call Gateway is authenticated\nSingle tenant infra - all users can see all cars\nAll user input goes through Amplify, Amplify calls Gateway\nDB has list of vehicles and pulls from S3",
+              "hasOpenThreats": false
             }
           }
         ]
