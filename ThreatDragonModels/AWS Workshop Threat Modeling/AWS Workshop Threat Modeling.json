@@ -22,11 +22,11 @@
           {
             "position": {
               "x": 829.9999999999995,
-              "y": 25.000000000000597
+              "y": 25.00000000000105
             },
             "size": {
               "width": 260,
-              "height": 310
+              "height": 190
             },
             "attrs": {
               "label": {
@@ -44,12 +44,10 @@
               "isTrustBoundary": true,
               "hasOpenThreats": false,
               "crossingFlows": [
-                "a3f266ea-0b5b-45d4-8f8f-8e200c35d81e",
-                "81b80fdf-1a10-4a19-9e9e-9db47e1ad84c"
+                "a3f266ea-0b5b-45d4-8f8f-8e200c35d81e"
               ],
               "containedElements": [
-                "f77ba07b-fbb3-4a8e-aa96-b2003967448f",
-                "5f553d92-7e38-4f4b-aea1-d4940443112e"
+                "f77ba07b-fbb3-4a8e-aa96-b2003967448f"
               ]
             }
           },
@@ -88,6 +86,38 @@
                 "9a14a511-8096-41bd-903a-53e66c286d66",
                 "0bb7d713-f782-45a1-b981-b238567bf15c",
                 "23e35eca-240f-4461-83a6-10298936f660"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 834.9999999999995,
+              "y": 230
+            },
+            "size": {
+              "width": 250,
+              "height": 120
+            },
+            "attrs": {
+              "label": {
+                "text": "Lambda/S3 Boundary"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "9506d511-62d7-4acf-93cb-bda4dd7bb2f3",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Lambda/S3 Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "81b80fdf-1a10-4a19-9e9e-9db47e1ad84c"
+              ],
+              "containedElements": [
+                "5f553d92-7e38-4f4b-aea1-d4940443112e"
               ]
             }
           },
@@ -1175,7 +1205,7 @@
               "protocol": "",
               "threats": [],
               "trustBoundaryIds": [
-                "d2256203-7f66-4ed4-924e-59bdfd2495ce"
+                "9506d511-62d7-4acf-93cb-bda4dd7bb2f3"
               ]
             },
             "labels": [
