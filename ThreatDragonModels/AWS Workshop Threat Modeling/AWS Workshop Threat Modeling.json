@@ -1232,15 +1232,6 @@
             }
           }
         ]
-      },
-      {
-        "id": 1,
-        "title": "Vehicle Registration Feature Model",
-        "diagramType": "Generic",
-        "placeholder": "New generic diagram description",
-        "thumbnail": "./public/content/images/thumbnail.jpg",
-        "version": "2.6.2",
-        "cells": []
       }
     ],
     "diagramTop": 2,
